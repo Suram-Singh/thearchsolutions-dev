@@ -1,5 +1,5 @@
 <x-frontend-layout>
-    <x-slot name='wrapper'>
+    @slot('wrapper')
         <!-- main-hero-wrap-->
         <div class="main-hero-wrap  full-height">
             <div class="main-hero-wrap-container full-height">
@@ -12,21 +12,21 @@
                                     <!--ms_item-->
                                     <div class="swiper-slide">
                                         <div class="ms-item_fs full-height  fl-wrap">
-                                            <div class="bg" data-bg="images/bg/4.jpg"></div>
+                                            <div class="bg" data-bg="{{asset('assets/frontend/images/bg/4.jpg') }}"></div>
                                         </div>
                                     </div>
                                     <!--ms_item end-->
                                     <!--ms_item-->
                                     <div class="swiper-slide ">
                                         <div class="ms-item_fs full-height fl-wrap">
-                                            <div class="bg" data-bg="images/bg/5.jpg"></div>
+                                            <div class="bg" data-bg="{{asset('assets/frontend/images/bg/5.jpg') }}"></div>
                                         </div>
                                     </div>
                                     <!--ms_item end-->
                                     <!--ms_item-->
                                     <div class="swiper-slide">
                                         <div class="ms-item_fs full-height fl-wrap">
-                                            <div class="bg" data-bg="images/bg/8.jpg"></div>
+                                            <div class="bg" data-bg="{{asset('assets/frontend/images/bg/8.jpg') }}"></div>
                                         </div>
                                     </div>
                                     <!--ms_item end-->
@@ -41,7 +41,7 @@
                     <div class="container">
                         <div class="hero_align_title-container">
                             <div class="hhw_header">Welcome to Our Website</div>
-                            <h2><a href="#sec1" class="custom-scroll-link">TrustBook<br>Construction and Architecture
+                            <h2><a href="#sec1" class="custom-scroll-link">The Arch Solutions<br>Construction and Architecture
                                     <br> <span> Company</span></a></h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque.
                                 Nulla finibus lobortis pulvinar. </p>
@@ -108,7 +108,7 @@
                                                 iaculis massa faucibus feugiat. In fermentum facilisis massa, a
                                                 consequat purus viverra. Aliquam erat volutpat.
                                             </p>
-                                            <a href="about.html" class="btn   float-btn   cf_btn"
+                                            <a href="{{ route('about') }}" class="btn   float-btn   cf_btn"
                                                 style="margin-top:30px"><i class="fas fa-caret-right"></i><span>Read
                                                     more about us</span></a>
                                             <div class="dots-grid-dec"></div>
@@ -116,14 +116,14 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="about-img ab_i2">
-                                            <img src="images/all/1.jpg" class="respimg" alt="">
+                                            <img src="{{asset('assets/frontend/images/all/1.jpg') }}" class="respimg" alt="">
                                             <div class="about-img-hotifer">
                                                 <p>Your website is fully responsive so visitors can view your content
                                                     from their choice of device.</p>
                                                 <h4>Mark Antony</h4>
                                                 <h5>Renstate CEO</h5>
                                             </div>
-                                            <div class="about-img-logo">Trustbook Construction</div>
+                                            <div class="about-img-logo">The Arch Solutions</div>
                                             <div class="ab_i2-dec"></div>
                                         </div>
                                     </div>
@@ -172,7 +172,7 @@
                                                     <div class="half-carousel-item-box">
                                                         <div class="half-carousel-item fl-wrap">
                                                             <div class="bg-wrap bg-parallax-wrap-gradien">
-                                                                <div class="bg" data-bg="images/folio/10.jpg"
+                                                                <div class="bg" data-bg="{{asset('assets/frontend/images/folio/10.jpg') }}"
                                                                     data-swiper-parallax="10%"></div>
                                                             </div>
                                                             <div class="grid-det_category"><a
@@ -188,7 +188,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="half-carousel-content">
-                                                                <h3><a href="portfolio-single.html">White Walls
+                                                                <h3><a href="{{ route('portfolio') }}">White Walls
                                                                         House</a></h3>
                                                                 <p>Constant care and attention to the patients makes
                                                                     good record</p>
@@ -202,7 +202,7 @@
                                                     <div class="half-carousel-item-box">
                                                         <div class="half-carousel-item fl-wrap">
                                                             <div class="bg-wrap bg-parallax-wrap-gradien">
-                                                                <div class="bg" data-bg="images/folio/3.jpg"
+                                                                <div class="bg" data-bg="{{asset('assets/frontend/images/folio/3.jpg') }}"
                                                                     data-swiper-parallax="10%"></div>
                                                             </div>
                                                             <div class="grid-det_category"><a
@@ -218,7 +218,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="half-carousel-content">
-                                                                <h3><a href="portfolio-single.html">Project Endoran</a>
+                                                                <h3><a href="{{ route('portfolio') }}">Project Endoran</a>
                                                                 </h3>
                                                                 <p>Constant care and attention to the patients makes
                                                                     good record</p>
@@ -232,7 +232,7 @@
                                                     <div class="half-carousel-item-box">
                                                         <div class="half-carousel-item fl-wrap">
                                                             <div class="bg-wrap bg-parallax-wrap-gradien">
-                                                                <div class="bg" data-bg="images/folio/5.jpg"
+                                                                <div class="bg" data-bg="{{asset('assets/frontend/images/folio/5.jpg') }}"
                                                                     data-swiper-parallax="10%"></div>
                                                             </div>
                                                             <div class="grid-det_category"><a
@@ -248,7 +248,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="half-carousel-content">
-                                                                <h3><a href="portfolio-single.html">Trinity River
+                                                                <h3><a href="{{ route('portfolio') }}">Trinity River
                                                                         Renovate</a></h3>
                                                                 <p>Constant care and attention to the patients makes
                                                                     good record</p>
@@ -262,7 +262,7 @@
                                                     <div class="half-carousel-item-box">
                                                         <div class="half-carousel-item fl-wrap">
                                                             <div class="bg-wrap bg-parallax-wrap-gradien">
-                                                                <div class="bg" data-bg="images/folio/9.jpg"
+                                                                <div class="bg" data-bg="{{asset('assets/frontend/images/folio/9.jpg') }}"
                                                                     data-swiper-parallax="10%"></div>
                                                             </div>
                                                             <div class="grid-det_category"><a
@@ -278,7 +278,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="half-carousel-content">
-                                                                <h3><a href="portfolio-single.html">World Trade
+                                                                <h3><a href="{{ route('portfolio') }}">World Trade
                                                                         Center</a></h3>
                                                                 <p>Constant care and attention to the patients makes
                                                                     good record</p>
@@ -306,7 +306,7 @@
                                                 <div class="total_c2"></div>
                                             </div>
                                         </div>
-                                        <a href="portfolio.html" class="hcw_btn"><span>View all Projects</span><i
+                                        <a href="{{ route('portfolio') }}" class="hcw_btn"><span>View all Projects</span><i
                                                 class="fa-regular fa-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -324,7 +324,7 @@
                                     <div class="col-md-6">
                                         <h4>What We Do</h4>
                                         <h2>We Offer Smarter & More Affordable Access To <br> Construction and
-                                            Architecture Services. <br> We Are Trustbook.</h2>
+                                            Architecture Services. <br> We Are The Arch Solutions.</h2>
                                     </div>
                                     <div class="col-md-6">
                                         <p style="margin-top: 40px">Aiusmod tempor incididunt ut labore sed dolore
@@ -340,7 +340,7 @@
                                 <div class="row">
                                     <!--card item -->
                                     <div class="col-md-4">
-                                        <a class="content-inner" href="services-single.html">
+                                        <a class="content-inner" href="{{ route('services') }}">
                                             <div class="content-front">
                                                 <div class="cf-inner">
                                                     <div class="inner">
@@ -357,7 +357,7 @@
                                                 </div>
                                             </div>
                                             <div class="content-back">
-                                                <div class="bg " data-bg="images/services/1.jpg"></div>
+                                                <div class="bg " data-bg="{{asset('assets/frontend/images/services/1.jpg') }}"></div>
                                                 <div class="overlay"></div>
                                                 <div class="inner">
                                                     <span class="cf-inner_title color-bg">Read more</span>
@@ -368,7 +368,7 @@
                                     <!--card item end -->
                                     <!--card item -->
                                     <div class="col-md-4">
-                                        <a class="content-inner" href="services-single.html">
+                                        <a class="content-inner" href="{{ route('services') }}">
                                             <div class="content-front">
                                                 <div class="cf-inner">
                                                     <div class="inner">
@@ -385,7 +385,7 @@
                                                 </div>
                                             </div>
                                             <div class="content-back">
-                                                <div class="bg " data-bg="images/services/2.jpg"></div>
+                                                <div class="bg " data-bg="{{asset('assets/frontend/images/services/2.jpg') }}"></div>
                                                 <div class="overlay"></div>
                                                 <div class="inner">
                                                     <span class="cf-inner_title color-bg">Read more</span>
@@ -396,7 +396,7 @@
                                     <!--card item end -->
                                     <!--card item -->
                                     <div class="col-md-4">
-                                        <a class="content-inner" href="services-single.html">
+                                        <a class="content-inner" href="{{ route('services') }}">
                                             <div class="content-front">
                                                 <div class="cf-inner">
                                                     <div class="inner">
@@ -413,7 +413,7 @@
                                                 </div>
                                             </div>
                                             <div class="content-back">
-                                                <div class="bg " data-bg="images/services/3.jpg"></div>
+                                                <div class="bg " data-bg="{{asset('assets/frontend/images/services/3.jpg') }}"></div>
                                                 <div class="overlay"></div>
                                                 <div class="inner">
                                                     <span class="cf-inner_title color-bg">Read more</span>
@@ -434,7 +434,7 @@
                             <div class="section-dec-top_line"></div>
                         </div>
                         <div class="serv-dec-btn-wrap">
-                            <a href="services.html"><span>View all Services </span> <i
+                            <a href="{{ route('services') }}"><span>View all Services </span> <i
                                     class="fa-regular fa-arrow-right"></i></a>
                         </div>
                         <div class="section-number"> <span>0</span>2. </div>
@@ -445,7 +445,7 @@
                 <div class="section wide-section">
                     <div class="bg-wrap fs-wrapper bg-wrap_half">
                         <div class="bg-wrap-container" data-scrollax-parent="true">
-                            <div class="bg bg-parallax" data-bg="images/bg/7.jpg"
+                            <div class="bg bg-parallax" data-bg="{{asset('assets/frontend/images/bg/7.jpg') }}"
                                 data-scrollax="properties: { translateY: '30%' }"></div>
                             <div class="overlay"></div>
                         </div>
@@ -471,31 +471,31 @@
                                                         <!--client-item-->
                                                         <div class="swiper-slide">
                                                             <a href="#" class="client-item"><img
-                                                                    src="images/clients/1.png" alt=""></a>
+                                                                    src="{{asset('assets/frontend/images/clients/1.png') }}" alt=""></a>
                                                         </div>
                                                         <!--client-item end-->
                                                         <!--client-item-->
                                                         <div class="swiper-slide">
                                                             <a href="#" class="client-item"><img
-                                                                    src="images/clients/2.png" alt=""></a>
+                                                                    src="{{asset('assets/frontend/images/clients/2.png') }}" alt=""></a>
                                                         </div>
                                                         <!--client-item end-->
                                                         <!--client-item-->
                                                         <div class="swiper-slide">
                                                             <a href="#" class="client-item"><img
-                                                                    src="images/clients/1.png" alt=""></a>
+                                                                    src="{{asset('assets/frontend/images/clients/1.png') }}" alt=""></a>
                                                         </div>
                                                         <!--client-item end-->
                                                         <!--client-item-->
                                                         <div class="swiper-slide">
                                                             <a href="#" class="client-item"><img
-                                                                    src="images/clients/2.png" alt=""></a>
+                                                                    src="{{asset('assets/frontend/images/clients/2.png') }}" alt=""></a>
                                                         </div>
                                                         <!--client-item end-->
                                                         <!--client-item-->
                                                         <div class="swiper-slide">
                                                             <a href="#" class="client-item"><img
-                                                                    src="images/clients/1.png" alt=""></a>
+                                                                    src="{{asset('assets/frontend/images/clients/1.png') }}" alt=""></a>
                                                         </div>
                                                         <!--client-item end-->
                                                     </div>
@@ -559,7 +559,7 @@
                                                 </div>
                                                 <div class="accordian__body-bg">
                                                     <div class="bg-wrap fs-wrapper">
-                                                        <div class="bg" data-bg="images/all/8.jpg"></div>
+                                                        <div class="bg" data-bg="{{asset('assets/frontend/images/all/8.jpg') }}"></div>
                                                     </div>
                                                     <div class="overlay"></div>
                                                 </div>
@@ -595,7 +595,7 @@
                                                 </div>
                                                 <div class="accordian__body-bg">
                                                     <div class="bg-wrap fs-wrapper">
-                                                        <div class="bg" data-bg="images/all/2.jpg"></div>
+                                                        <div class="bg" data-bg="{{asset('assets/frontend/images/all/2.jpg') }}"></div>
                                                     </div>
                                                     <div class="overlay"></div>
                                                 </div>
@@ -631,7 +631,7 @@
                                                 </div>
                                                 <div class="accordian__body-bg">
                                                     <div class="bg-wrap fs-wrapper">
-                                                        <div class="bg" data-bg="images/all/3.jpg"></div>
+                                                        <div class="bg" data-bg="{{asset('assets/frontend/images/all/3.jpg') }}"></div>
                                                     </div>
                                                     <div class="overlay"></div>
                                                 </div>
@@ -674,7 +674,7 @@
                                         <div class="testi-item">
                                             <div class="testimonilas-text">
                                                 <div class="testi-header">
-                                                    <div class="testi-avatar"><img src="images/avatar/3.jpg"
+                                                    <div class="testi-avatar"><img src="{{asset('assets/frontend/images/avatar/3.jpg') }}"
                                                             alt=""></div>
                                                     <h3>Centa Simpson</h3>
                                                 </div>
@@ -702,7 +702,7 @@
                                         <div class="testi-item">
                                             <div class="testimonilas-text">
                                                 <div class="testi-header">
-                                                    <div class="testi-avatar"><img src="images/avatar/2.jpg"
+                                                    <div class="testi-avatar"><img src="{{asset('assets/frontend/images/avatar/2.jpg') }}"
                                                             alt=""></div>
                                                     <h3>Andy Dimasky</h3>
                                                 </div>
@@ -728,7 +728,7 @@
                                         <div class="testi-item">
                                             <div class="testimonilas-text">
                                                 <div class="testi-header">
-                                                    <div class="testi-avatar"><img src="images/avatar/1.jpg"
+                                                    <div class="testi-avatar"><img src="{{asset('assets/frontend/images/avatar/1.jpg') }}"
                                                             alt=""></div>
                                                     <h3>Jannet Dellov</h3>
                                                 </div>
@@ -755,7 +755,7 @@
                                         <div class="testi-item">
                                             <div class="testimonilas-text">
                                                 <div class="testi-header">
-                                                    <div class="testi-avatar"><img src="images/avatar/5.jpg"
+                                                    <div class="testi-avatar"><img src="{{asset('assets/frontend/images/avatar/5.jpg') }}"
                                                             alt=""></div>
                                                     <h3>Nicolo Svensky</h3>
                                                 </div>
@@ -797,100 +797,5 @@
             </div>
         </div>
         <!-- content end -->
-        <!-- footer -->
-        <div class="height-emulator"></div>
-        <footer class="main-footer">
-            <!-- footer-inner -->
-            <div class="footer-inner ">
-                <div class="container">
-                    <div class="footer-inner-wrap">
-                        <div class="row">
-                            <!-- footer-widget-->
-                            <div class="col-lg-4">
-                                <div class="footer-widget">
-                                    <div class="footer-header fl-wrap"><span>01.</span> About US</div>
-                                    <div class="footer_text  footer-box ">
-                                        <p>Our team takes over everything, from an idea and concept development to
-                                            realization. We believe in traditions and incorporate them within our
-                                            innovations.Client is the soul of the project. Aiusmod tempor incididunt ut
-                                            labore sed dolore magna .</p>
-                                        <div class="footer-solcial">
-                                            <ul>
-                                                <li> <a href="#" target="_blank"><i
-                                                            class="fa-brands fa-facebook-f"></i></a> </li>
-                                                <li><a href="#" target="_blank"><i
-                                                            class="fa-brands fa-x-twitter"></i></a></li>
-                                                <li><a href="#" target="_blank"><i
-                                                            class="fa-brands fa-tiktok"></i></a></li>
-                                                <li><a href="#" target="_blank"><i
-                                                            class="fa-brands fa-instagram"></i></a></li>
-                                                <li><a href="#" target="_blank"><i
-                                                            class="fa-brands fa-youtube"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- footer-widget end-->
-                            <!-- footer-widget-->
-                            <div class="col-lg-4">
-                                <div class="footer-widget">
-                                    <div class="footer-header fl-wrap"><span>02.</span> Contacts</div>
-                                    <!-- footer-contacts-->
-                                    <div class="footer-contacts footer-box ">
-                                        <ul>
-                                            <li><span>Call:</span><a href="#">+489756412322</a></li>
-                                            <li><span>Write :</span><a href="#">yourmail@domain.com</a></li>
-                                            <li><span>Find us : </span><a href="#">USA 27TH Brooklyn NY</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- footer contacts end -->
-                                    <a href="contact.html" class="fc_button">Get In Touch <i
-                                            class="fa-light fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- footer-widget end-->
-                            <!-- footer-widget-->
-                            <div class="col-lg-4">
-                                <div class="footer-widget">
-                                    <div class="footer-header "><span>03.</span> Subscribe</div>
-                                    <div class="footer-box fl-wrap">
-                                        <p>Want to be notified when we launch a new template or an udpate. Just sign up
-                                            and we'll send you a notification by email.</p>
-                                        <div class="subcribe-form ">
-                                            <form id="subscribe" class="subcribe-form_item">
-                                                <input class="enteremail" name="email" id="subscribe-email"
-                                                    placeholder="Your Email" spellcheck="false" type="text">
-                                                <button type="submit" id="subscribe-button"
-                                                    class="subscribe-button">Send</button>
-                                                <label for="subscribe-email" class="subscribe-message"></label>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- footer-widget end-->
-                        </div>
-                    </div>
-                </div>
-                <!-- footer-inner end -->
-                <div class="footer-title-dec"><span>Trustbook Construction</span> </div>
-                <div class="footer-inner_dec footer-inner_dec-left"></div>
-                <div class="footer-inner_dec footer-inner_dec-right"></div>
-            </div>
-            <!-- subbfooter -->
-            <div class="subbfooter">
-                <div class="container">
-                    <div class="policy-box">
-                        <span> &#169; Trustbook 2025 / All rights reserved. </span>
-                    </div>
-                    <div class="to-top-btn to-top">Back to top<i class="fal fa-long-arrow-up"></i></div>
-                    <div class="subbfooter_dec"></div>
-                </div>
-            </div>
-            <!-- subbfooter end -->
-        </footer>
-        <!-- footer end -->
-        </div>
-    </x-slot>
+    @endslot
 </x-frontend-layout>

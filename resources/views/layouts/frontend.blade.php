@@ -12,6 +12,7 @@
     <!--=============== css  ===============-->
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/frontend/css/plugins.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/frontend/css/style.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ asset('assets/frontend/css/custom.css') }}">
     <!--=============== favicons ===============-->
     <link rel="shortcut icon" href="{{ asset('assets/frontend/images/favicon.ico') }}">
 </head>
@@ -29,7 +30,8 @@
 
         <!-- Page Content -->
         <div class="wrapper">
-            {{ $slot }}
+            {{ $wrapper }}
+            @include('layouts.footer')
         </div>
     </div>
     <!-- Main end -->
